@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa; /* Set background color as needed */
+}
+
+.center-container {
+  text-align: center;
+}
+
+.cat-details-message {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cat-details-card {
+  background-color: #ffffff;
+  width: 300px; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cat-details-info {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+  
+<div class="card cat-details-card">
+  <div class="card-body">
+    <p class="cat-details-info">
+      <strong>ID:</strong> {{ cat.id }}&nbsp;
+      <strong>Name:</strong> {{ cat.name }}&nbsp;
+      <strong>Breed:</strong> {{ cat.breed }}&nbsp;
+      <strong>Country:</strong> {{ cat.country }}
+    </p>
+  </div>
+</div>
+</body>
+</html><p class="cat-details-message">cat-details works!</p>
+
